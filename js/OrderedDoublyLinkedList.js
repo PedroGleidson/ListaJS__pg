@@ -12,7 +12,7 @@ class OrderedDoublyLinkedList extends LinkedList {
       let cursor = this.head;
       let previous = null;
       if (this._isInvalid(value)) {
-      throw new Error("Valor inválido");
+      throw new Error("Valor é inválido");
       }
       if (this.head === null) {
       this.head = node;
