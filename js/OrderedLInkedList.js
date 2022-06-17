@@ -6,7 +6,7 @@ class OrderedLinkedList extends LinkedList {
   }
 
   insert(position, value) {
-    throw new Error('Não é possível escolher a posição em lista ordenada');
+    throw new Error('Não é possível escolher a posição em lista duplamente ordenada');
   }
 
   append(value) {

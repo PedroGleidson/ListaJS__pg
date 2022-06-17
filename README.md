@@ -1,3 +1,6 @@
 # FilaJS
 
-Project intended to teach ***Linked List*** data structure in JavaScript for students undergraduate in FJN.
+
+
+
+# Se não valer um ponto, me dá pelo menos 0,1😢😢.
