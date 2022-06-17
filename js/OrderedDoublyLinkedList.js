@@ -4,7 +4,7 @@ class OrderedDoublyLinkedList extends LinkedList {
   }
   
   insert(position, value,indexvalue) {
-      throw new Error("Não é possível escolher a posição em lista duplamente ordenada");
+      throw new Error("Não é possível  adicionar um valor na posição em lista duplamente encadeada ordenada");
   }
   
   append(value) {
@@ -12,7 +12,7 @@ class OrderedDoublyLinkedList extends LinkedList {
       let cursor = this.head;
       let previous = null;
       if (this._isInvalid(value)) {
-      throw new Error("Valor é inválido");
+      throw new Error("Esse valor é inválido");
       }
       if (this.head === null) {
       this.head = node;
@@ -78,7 +78,7 @@ class OrderedDoublyLinkedList extends LinkedList {
           cursor = cursor.next;
           i++
       }
-      throw new Error('Valor não encontrado');
+      throw new Error('Esse valor não foi encontrado');
   }
   removeAt(position) {
       let previous = null;
@@ -101,7 +101,7 @@ class OrderedDoublyLinkedList extends LinkedList {
           cursor = cursor.next;
           i++
       }
-      throw new Error('Valor não encontrado');
+      throw new Error('Esse valor não foi encontrado');
   }
   }
   

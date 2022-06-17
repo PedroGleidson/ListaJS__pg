@@ -16,7 +16,7 @@ class ArrayList {
     insert(position, value) {
 
         if (this._isInvalid(value)) {
-            throw new Error('Valor inválido');
+            throw new Error('Esse valor é inválidoo');
         }
 
         const index = position - 1;
@@ -35,12 +35,12 @@ class ArrayList {
 
     remove(value) {
         if (this._isInvalid(value)) {
-            throw new Error('Valor inválido');
+            throw new Error('Esse valor é inválido');
         }
         const index = this.data.indexOf(value);
 
         if (index === -1) {
-            throw new Error('Valor não encontrado');
+            throw new Error('Esse valor não foi encontrado');
         }
         const [removed] = this.data.splice(index, 1);
 

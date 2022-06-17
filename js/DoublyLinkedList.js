@@ -17,7 +17,7 @@ class DoublyLinkedList extends LinkedList {
 
     append(value) {
         if (this._isInvalid(value)) {
-            throw new Error('Valor inválido');
+            throw new Error('Esse valor é inválido');
         }
         const node = new Node(value);
         if (this.head === null) {
@@ -32,12 +32,12 @@ class DoublyLinkedList extends LinkedList {
 
     insert(position, value) {
         if (this._isInvalid(value)) {
-            throw new Error('Valor inválido');
+            throw new Error('Esse valor é inválido');
         }
         const index = position - 1;
 
         if (index < 0 || index > this.length) {
-            throw new Error('Posição inválida');
+            throw new Error('Essa posição é inválida');
         }
 
         if (index === this.length) {
@@ -67,14 +67,14 @@ class DoublyLinkedList extends LinkedList {
             cursor = cursor.next;
             i++
         }
-        throw new Error('Valor não encontrado');
+        throw new Error('Esse valor não foi encontrado');
     }
 
     removeAt(position) {
         const index = position - 1;
 
         if (index < 0 || index >= this.length) {
-            throw new Error('Posição inválida');
+            throw new Error('Essa posição é inválida');
         }
 
         const deadNode = this._getBy(index);

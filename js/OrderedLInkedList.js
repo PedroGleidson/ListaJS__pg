@@ -6,12 +6,12 @@ class OrderedLinkedList extends LinkedList {
   }
 
   insert(position, value) {
-    throw new Error('Não é possível escolher a posição em lista duplamente ordenada');
+    throw new Error('Não é possível escolher a posição em uma lista duplamente ordenada');
   }
 
   append(value) {
     if (this._isInvalid(value)) {
-      throw new Error('Valor inválido');
+      throw new Error('Esse valor é inválido');
     }
 
     const node = new Node(value);
